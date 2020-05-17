@@ -1,11 +1,23 @@
 {
   "name": "formik-stripe",
   "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/rhnorskov/formik-stripe#readme",
+  "bugs": {
+    "url": "https://github.com/rhnorskov/formik-stripe/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhnorskov/formik-stripe.git"
+  },
   "license": "MIT",
   "author": "Rasmus Nørskov",
   "main": "dist/index.js",
   "module": "dist/formik-stripe.esm.js",
   "typings": "dist/index.d.ts",
+  "directories": {
+    "example": "example"
+  },
   "files": [
     "dist",
     "src"
