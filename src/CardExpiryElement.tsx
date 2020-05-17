@@ -13,7 +13,7 @@ export interface CardExpiryElementProps extends StripeCardExpiryElementProps {
   name: string;
 }
 
-export const CardExpiryElement: React.FC<CardExpiryElementProps> = ({
+const CardExpiryElement: React.FC<CardExpiryElementProps> = ({
   name,
   onBlur,
   onChange,
@@ -90,6 +90,11 @@ function cardExpiryElement(
     },
   });
 }
+
+// @ts-ignore
+CardExpiryElement.__elementType = StripeCardExpiryElement.__elementType;
+
+export { CardExpiryElement };
 
 addMethod<ObjectSchema>(object, "cardExpiryElement", cardExpiryElement);
 

@@ -13,7 +13,7 @@ export interface CardCvcElementProps extends StripeCardCvcElementProps {
   name: string;
 }
 
-export const CardCvcElement: React.FC<CardCvcElementProps> = ({
+const CardCvcElement: React.FC<CardCvcElementProps> = ({
   name,
   onBlur,
   onChange,
@@ -40,6 +40,11 @@ export const CardCvcElement: React.FC<CardCvcElementProps> = ({
     />
   );
 };
+
+// @ts-ignore
+CardCvcElement.__elementType = StripeCardCvcElement.__elementType;
+
+export { CardCvcElement };
 
 function cardCvcElement(
   this: ObjectSchema<object>,
