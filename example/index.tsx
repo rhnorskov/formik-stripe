@@ -1,6 +1,6 @@
 import { Elements, useElements, useStripe } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
-import { ErrorMessage, Form, Formik, FormikConfig, Field } from "formik";
+import { ErrorMessage, Form, Formik, FormikConfig } from "formik";
 import React from "react";
 import ReactDOM from "react-dom";
 import * as yup from "yup";
