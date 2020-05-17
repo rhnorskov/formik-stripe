@@ -13,7 +13,7 @@ export interface CardNumberElementProps extends StripeCardNumberElementProps {
   name: string;
 }
 
-export const CardNumberElement: React.FC<CardNumberElementProps> = ({
+const CardNumberElement: React.FC<CardNumberElementProps> = ({
   name,
   onBlur,
   onChange,
@@ -40,6 +40,11 @@ export const CardNumberElement: React.FC<CardNumberElementProps> = ({
     />
   );
 };
+
+// @ts-ignore
+CardNumberElement.__elementType = StripeCardNumberElement.__elementType;
+
+export { CardNumberElement };
 
 function cardNumberElement(
   this: ObjectSchema<object>,
